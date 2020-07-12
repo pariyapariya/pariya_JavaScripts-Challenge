@@ -65,6 +65,14 @@ body {
   margin-top: 10px;
 }
 
+.table-head {
+  font-size: 1.65rem;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
 select {
   display: block;
   width: 100%;

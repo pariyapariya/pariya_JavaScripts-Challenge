@@ -8,15 +8,6 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   <link rel="stylesheet" href="static/css/style.css">
-
-  <!-- getOption() from W3school in order to use dropdown lists -->
-  <!-- <script>
-    function getOption() {
-      var obj = document.getElementById("ufo-shape");
-      document.getElementById("demo").innerHTML = 
-      obj.options[obj.selectedIndex].text;
-    }
-  </script> -->
 </head>
 
 <body>
@@ -46,23 +37,27 @@
                     <ul class="list-group" id="filters">
                       <li class="filter list-group-item">
                         <label for="date">Enter Date</label>
-                        <input class="form-control" id="datetime" type="text" placeholder="1/11/2011">
+                        <input class="form-control" id="datetime" type="text" placeholder="1/1-1/13/2010">
+                        <!-- <button id="filter-date-btn" type="button" class="btn btn-default">Go</button> -->
                       </li>
                       <li class="filter list-group-item">
                         <label for="city">Enter City</label>
                         <input class="form-control" id="city" type="text" placeholder="i.e. white oak">
+                        <!-- <button id="filter-city-btn" type="button" class="btn btn-default">Go</button> -->
                       </li>
                       <li class="filter list-group-item">
                         <label for="state">Enter State</label>
                         <input class="form-control" id="state" type="text" placeholder="i.e. fl">
+                        <!-- <button id="filter-state-btn" type="button" class="btn btn-default">Go</button> -->
                       </li>
                       <li class="filter list-group-item">
                         <label for="country">Enter Country</label>
                         <input class="form-control" id="country" type="text" placeholder="i.e. us">
+                        <!-- <button id="filter-country-btn" type="button" class="btn btn-default">Go</button> -->
                       </li>
                       <li class="filter list-group-item">
                         <label for="shape">Select UFO Shape</label>
-                        <select class="form-control" id="ufo-shape" size="4">
+                        <select class="custom-select" id="ufo-shape" size="1">
                           <option>circle</option>
                           <option>light</option>
                           <option>triangle</option>
@@ -81,11 +76,13 @@
                           <option>other</option>
                           <option>unknown</option>                    
                         </select>
+                        <!-- <button id="filter-shape-btn" type="button" class="btn btn-default">Go</button> -->
                       </li>
                     </ul>
                   </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                  <button id="clear-btn" type="button" class="btn btn-default">Clear</button>
+                  <button id="filter-btn" type="button" class="btn btn-default">FILTER TABLE</button>
+                  <button id="clear-btn" type="button" class="btn btn-default">CLEAR TABLE</button>              
+                  <button class="btn btn-default" onclick="document.getElementsByTagName('input').value = ''">CLEAR INPUT</button>
                 </form>
               </div>
             </div>
